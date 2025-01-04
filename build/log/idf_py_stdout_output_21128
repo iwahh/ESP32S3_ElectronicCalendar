@@ -1,0 +1,41 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\ESP32\myCode\ESP32S3_ElectronicCalendar\build\bootloader\esp-idf\esptool_py && D:\ESP32\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP32/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/ESP32/myCode/ESP32S3_ElectronicCalendar/build/bootloader/bootloader.bin"
+Bootloader binary size 0x51c0 bytes. 0x2e40 bytes (36%) free.
+[2/9] Building CXX object esp-idf/ledDisplay/CMakeFiles/__idf_ledDisplay.dir/ledDisplay.cpp.obj
+In file included from D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/ledDisplay/include/platforms/esp32s3/gdma_lcd_parallel16.hpp:66,
+                 from D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/ledDisplay/include/platforms/platform_detect.hpp:35,
+                 from D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/ledDisplay/include/ESP32-HUB75-MatrixPanel-I2S-DMA.h:13,
+                 from D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/ledDisplay/include/ledDisplay.h:4,
+                 from D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/ledDisplay/ledDisplay.cpp:6:
+D:/ESP32/Espressif/frameworks/esp-idf-v5.1.2/components/hal/esp32s3/include/hal/lcd_ll.h: In function 'void lcd_ll_enable_interrupt(lcd_cam_dev_t*, uint32_t, bool)':
+D:/ESP32/Espressif/frameworks/esp-idf-v5.1.2/components/hal/esp32s3/include/hal/lcd_ll.h:557:33: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  557 |         dev->lc_dma_int_ena.val |= mask & 0x03;
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+D:/ESP32/Espressif/frameworks/esp-idf-v5.1.2/components/hal/esp32s3/include/hal/lcd_ll.h:559:33: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  559 |         dev->lc_dma_int_ena.val &= ~(mask & 0x03);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[3/9] Linking C static library esp-idf\ledDisplay\libledDisplay.a
+[4/9] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+In file included from D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/ledDisplay/include/platforms/esp32s3/gdma_lcd_parallel16.hpp:66,
+                 from D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/ledDisplay/include/platforms/platform_detect.hpp:35,
+                 from D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/ledDisplay/include/ESP32-HUB75-MatrixPanel-I2S-DMA.h:13,
+                 from D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/ledDisplay/include/ledDisplay.h:4,
+                 from D:/ESP32/myCode/ESP32S3_ElectronicCalendar/main/main.cpp:7:
+D:/ESP32/Espressif/frameworks/esp-idf-v5.1.2/components/hal/esp32s3/include/hal/lcd_ll.h: In function 'void lcd_ll_enable_interrupt(lcd_cam_dev_t*, uint32_t, bool)':
+D:/ESP32/Espressif/frameworks/esp-idf-v5.1.2/components/hal/esp32s3/include/hal/lcd_ll.h:557:33: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  557 |         dev->lc_dma_int_ena.val |= mask & 0x03;
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+D:/ESP32/Espressif/frameworks/esp-idf-v5.1.2/components/hal/esp32s3/include/hal/lcd_ll.h:559:33: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  559 |         dev->lc_dma_int_ena.val &= ~(mask & 0x03);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable ESP32S3_ElectronicCalendar.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/ESP32/myCode/ESP32S3_ElectronicCalendar/build/ESP32S3_ElectronicCalendar.bin
+[9/9] cmd.exe /C "cd /D D:\ESP32\myCode\ESP32S3_ElectronicCalendar\build\esp-idf\esptool_py && D:\ESP32\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP32/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESP32/myCode/ESP32S3_ElectronicCalendar/build/partition_table/partition-table.bin D:/ESP32/myCode/ESP32S3_ElectronicCalendar/build/ESP32S3_ElectronicCalendar.bin"
+ESP32S3_ElectronicCalendar.bin binary size 0x3b610 bytes. Smallest app partition is 0x100000 bytes. 0xc49f0 bytes (77%) free.
