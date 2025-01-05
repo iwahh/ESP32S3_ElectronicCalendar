@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "ESP32S3_ElectronicCalendar",
-    "project_version":    "46201fc-dirty",
+    "project_version":    "420dd12-dirty",
     "project_path":       "D:/ESP32/myCode/ESP32S3_ElectronicCalendar",
     "idf_path":           "D:/ESP32/Espressif/frameworks/esp-idf-v5.1.2",
     "build_dir":          "D:/ESP32/myCode/ESP32S3_ElectronicCalendar/build",
@@ -175,7 +175,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/ESP32/myCode/ESP32S3_ElectronicCalendar/build/esp-idf/dht11/libdht11.a",
-            "sources": [ "D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/dht11/dht11.c" ],
+            "sources": [ "D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/dht11/dht11.cpp", "D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/dht11/dht11.c" ],
             "include_dirs": [ "include" ]
         },
         "driver": {
@@ -1075,7 +1075,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "D:/ESP32/myCode/ESP32S3_ElectronicCalendar/build/esp-idf/temt6000/libtemt6000.a",
-            "sources": [ "D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/temt6000/temt6000.cpp", "D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/temt6000/temt6000.c" ],
+            "sources": [ "D:/ESP32/myCode/ESP32S3_ElectronicCalendar/components/temt6000/temt6000.cpp" ],
             "include_dirs": [ "include" ]
         },
         "touch_element": {

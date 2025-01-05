@@ -12,6 +12,8 @@
 #include "dht11.h"
 #include "temt6000.h"
 
+TEMT6000_C temt6000 = TEMT6000_C();
+
 extern "C" void app_main(void)
 {
 
@@ -21,7 +23,8 @@ extern "C" void app_main(void)
     // w25q64.init();
     // dht11.init(&dht11);
     // temt6000.init(&temt6000);
-    temtTest();
+
+    temt6000.init();
 
     while (true)
     {

@@ -1,4 +1,4 @@
-idf_component_register(SRCS "dht11.c"
+idf_component_register(SRCS "dht11.cpp" "dht11.c"
                     INCLUDE_DIRS "include"
                     PRIV_REQUIRES freertos
                     PRIV_REQUIRES driver
