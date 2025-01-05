@@ -46,8 +46,10 @@ extern "C"
 
     extern temt6000Str_t temt6000;
 
+
+
 #ifdef __cplusplus
 }
 #endif
-
+    void temtTest(void);
 #endif

@@ -15,13 +15,14 @@
 extern "C" void app_main(void)
 {
 
-    ESP_LOGI("app_main", "free memory : %lu bytes", esp_get_free_heap_size());
+    // ESP_LOGI("app_main", "free memory : %lu bytes", esp_get_free_heap_size());
 
+    // ledDisplay.init();
+    // w25q64.init();
+    // dht11.init(&dht11);
+    // temt6000.init(&temt6000);
+    temtTest();
 
-    ledDisplay.init();
-    w25q64.init();
-    dht11.init(&dht11);
-    temt6000.init(&temt6000);
     while (true)
     {
         ESP_LOGI("app_main", "Hello");

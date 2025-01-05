@@ -100,7 +100,9 @@
         "adc_hal.h": "c",
         "adc.h": "c",
         "adc_continuous.h": "c",
-        "adc_types.h": "c"
+        "adc_types.h": "c",
+        "sstream": "cpp",
+        "regex": "cpp"
     },
     "idf.flashType": "UART"
 }
